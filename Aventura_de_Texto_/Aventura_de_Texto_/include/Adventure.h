@@ -63,7 +63,6 @@ public:
 		cout << endl;
 		cout << "Despiertas en una habitacion completamente vacia" << endl;
 		cout << "A excepcion de (n) puertas que ahi se encuentran." << endl;
-		cout << "0- Abrir puerta Blanca." << endl;
 		cout << "1- Abrir puerta Azul." << endl;
 		cout << "2- Abrir puerta Amarilla." << endl;
 		cout << "3- Abrir puerta Roja." << endl;
@@ -72,20 +71,20 @@ public:
 		cin >> op;
 		switch (op) {
 
-		case 0:
+		/*case 0:
 			Cuarto_(player);
-			break;
+			break;*/
 
 		case 1:
-			Sala_4(player);
+			Cuarto02(player);
 			break;
 
 		case 2:
-			Sala_3(player);
+			Cuarto03(player);
 			break;
 
 		case 3:
-			Sala_2(player);
+			Cuarto04(player);
 			break;
 
 		default:
@@ -96,7 +95,7 @@ public:
 		}
 	}
 
-	//Cuarto_ (n)
+	/*//Cuarto_ (n)
 	void
 		Cuarto_(Jugador player) {
 		//Stats Actuales del Jugador
@@ -146,11 +145,11 @@ public:
 			cout << "----------------------------------------" << endl;
 			break;
 		}
-	}
+	}*/ 
 
 	//Cuarto 02 (Puerta Azul)
 	void
-		Sala_2(Jugador player) {
+		Cuarto02(Jugador player) {
 		//Stats Actuales del Jugador
 		cout << "----------------------------------------" << endl;
 		cout << "Vida:" << player.vida << endl;
@@ -239,7 +238,7 @@ public:
 
 	//Cuarto 03 (Puerta Amarilla)
 	void
-		Sala_3(Jugador player) {
+		Cuarto03(Jugador player) {
 		//Stats Actuales del Jugador
 		cout << "----------------------------------------" << endl;
 		cout << "Vida:" << player.vida << endl;
@@ -281,7 +280,7 @@ public:
 
 	//Cuarto 04 (Puerta Roja)
 	void
-		Sala_4(Jugador player) {
+		Cuarto04(Jugador player) {
 		//Stats Actuales del Jugador
 		cout << "----------------------------------------" << endl;
 		cout << "Vida:" << player.vida << endl;
@@ -443,7 +442,7 @@ public:
 					break;
 
 				case 4:
-					Sala_4(player);
+					Cuarto04(player);
 					break;
 				}
 			}
@@ -483,7 +482,7 @@ public:
 						break;
 
 					case 4:
-						Sala_4(player);
+						Cuarto04(player);
 						break;
 					}
 				}
@@ -503,7 +502,7 @@ public:
 			break;
 
 		case 5:
-			Sala_4(player);
+			Cuarto04(player);
 			break;
 
 			//Gamer Over: Por oprimir otro boton
